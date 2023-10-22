@@ -52,8 +52,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-between text-white-400 mt-20 max-sm:mb-10 max-sm:flex-col max-sm:items-center'>
-        <div className='flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer'>
+      <div className='flex justify-between text-white-400 mt-20 max-sm:mb-20 max-sm:flex-col max-sm:items-center max-sm:justify-between'>
+        <div>
+          <a href="https://mohithgupta.github.io" target="_blank" rel="noreferrer" className="hover:text-slate-gray"> 
+            <p>Made with sarcasm and 💙 by Mohith</p>
+          </a>
+        </div>
+        <br />
+        <div className='flex flex-1 justify-end items-center gap-2 font-montserrat cursor-pointer'>
           <img
             src={copyrightSign}
             alt='copyright sign'
@@ -61,9 +67,10 @@ const Footer = () => {
             height={20}
             className='rounded-full m-0'
           />
+          {/* <br /> */}
           <p>Copyleft. All lefts reserved.</p>
         </div>
-        <p className='font-montserrat cursor-pointer'>Terms & Conditions - None</p>
+        {/* <p className='font-montserrat cursor-pointer'>Terms & Conditions - None</p> */}
       </div>
     </footer>
   );
